@@ -1,0 +1,20 @@
+version: '3.9'
+
+networks:
+  intnet:
+    external: false
+    name: ${INT_NETWORK}
+
+services:
+  php:
+    # Alpine Linux
+    build:
+      context: ./context
+      dockerfile: Dockerfile
+    image: lhsradek/fpm:v1
+    # image: php:fpm-alpine
+    container_name: "${APP_ID}-php"
+    hostname: "build-php.${INT_NETWORK}"
+    restart: ${DOCKER_RESTART_POLICY}
+    networks:
+      - intnet
