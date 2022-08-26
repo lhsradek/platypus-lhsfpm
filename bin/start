@@ -59,8 +59,8 @@ then
       docker save -o ${IMGFILE} ${IMG}
       docker image rm ${IMG}
       docker container prune -f
-     fi
-     if (docker load -i ${IMGFILE})
+    fi
+    if (docker load -i ${IMGFILE})
     then	   
       echo "An image file:'${IMGFILE}' is loaded.."
     fi
