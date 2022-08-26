@@ -6,6 +6,7 @@ ADD --chown=44 /root/bin/readme.txt /root/bin
 ADD --chown=55 /root/bin/alpine/add.sh /root/bin/alpine
 ADD --chown=55 /root/bin/alpine/timezone.sh /root/bin/alpine
 EXPOSE 9000
-RUN apk add --no-cache bash openssl gd-dev icu-dev php8-exif php8-gd php-intl php8-mysqli php8-pdo_mysql php8-pecl-imagick php8-zip zip zlib-dev
-RUN docker-php-ext-install exif gd intl mysqli pdo_mysql
-RUN apk del gd-dev icu-dev zlib-dev
+RUN apk add --no-cache bash openssl gd gd-dev icu-dev libzip-dev php8-exif php8-gd php-intl php8-mysqli php8-pdo_mysql php8-pecl-imagick php8-zip zip zlib-dev
+RUN docker-php-ext-install exif gd intl mysqli pdo_mysql zip
+RUN apk del gd-dev icu-dev zlib-dev libzip-dev
+RUN chown -R www-data:www-data /var/www/html
