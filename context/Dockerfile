@@ -12,4 +12,4 @@ RUN docker-php-ext-install bcmath exif gd intl mysqli pdo_mysql zip
 RUN pecl install imagick
 RUN docker-php-ext-enable imagick
 RUN apk del autoconf g++ gd-dev icu-dev make imagemagick-dev imagemagick-c++ libzip-dev zlib-dev
-RUN chown -R www-data:www-data /var/www/html
+RUN chown 82:82 -R /var/www/html
