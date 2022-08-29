@@ -50,7 +50,7 @@ fi
 IMG="lhsradek/fpm:v1"
 IMGFILE="lhsfpm-v1.img"
 if !(docker-compose ${ARGS} pull) # !
-then
+  then
   if !(docker image inspect "${IMG}" >/dev/null 2>&1)
   then
     if [[ ! -f "$rootPath/${IMGFILE}" ]]
