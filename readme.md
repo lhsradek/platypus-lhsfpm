@@ -1,7 +1,5 @@
 ### platypus-lhsfpm
 
-### platypus-lhsfpm
-
 [![Docker Pulls](https://img.shields.io/docker/pulls/lhsradek/fpm)](https://hub.docker.com/repository/docker/lhsradek/fpm)
 
 It's for:
