@@ -1,8 +1,8 @@
 ### platypus-lhsfpmdock
 
-For:
-
-https://hub.docker.com/repository/docker/lhsradek/lhsdock
+[![Docker Pulls](https://img.shields.io/docker/pulls/lhsradek/fpm)](https://hub.docker.com/repository/docker/lhsradek/fpm)
+for
+[![Docker Pulls](https://img.shields.io/docker/pulls/lhsradek/lhsdock)](https://hub.docker.com/repository/docker/lhsradek/lhsdock)
 
 #### Setup
 
