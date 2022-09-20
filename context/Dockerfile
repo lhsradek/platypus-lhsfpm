@@ -1,4 +1,4 @@
-FROM php:8.0.5-fpm-alpine
+FROM php:8.0.23-fpm-alpine
 LABEL org.opencontainers.image.authors="radek.kadner@gmail.com"
 LABEL description="https://hub.docker.com/repository/docker/lhsradek/fpm"
 RUN mkdir /root/bin /root/bin/alpine
