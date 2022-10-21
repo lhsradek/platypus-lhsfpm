@@ -2,9 +2,7 @@
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/lhsradek/fpm)](https://hub.docker.com/repository/docker/lhsradek/fpm)
 
-It's for:
-
-[![Docker Pulls](https://img.shields.io/docker/pulls/lhsradek/lhsdock)](https://hub.docker.com/repository/docker/lhsradek/lhsdock) in [platypus-lhsdock](https://github.com/lhsradek/platypus-lhsdock)
+It's for [platypus-lhsdock](https://github.com/lhsradek/platypus-lhsdock) and [platypus-wordpress-mysql](https://github.com/lhsradek/platypus-wordpress-mysql)
 
 With imagemagic etc.. for wordpress and apm-agent-php from https://github.com/elastic/apm-agent-php/releases
 
