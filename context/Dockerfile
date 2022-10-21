@@ -13,7 +13,7 @@ RUN pecl install imagick
 RUN docker-php-ext-enable imagick
 RUN apk del autoconf gcc g++ gd-dev icu-dev make musl-dev imagemagick-dev imagemagick-c++ libzip-dev xz-dev zlib-dev
 RUN rm -f /tmp/pear/download/imagick*
-ADD --chown=55 /root/bin/apm-agent-php_*.apk /root/bin/apm-agent-php_*.apk
+ADD --chown=44 /root/bin/apm-agent-php_*.apk /root/bin/apm-agent-php_*.apk
 RUN apk add --allow-untrusted --no-cache /root/bin/apm-agent-php_*.apk
 RUN rm -f /root/bin/apm-agent-php_*.apk
 RUN chown www-data:www-data -R /var/www/html
