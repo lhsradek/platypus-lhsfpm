@@ -1,5 +1,7 @@
 ### lhsdock-fpm
 
+with https://github.com/elastic/apm-agent-java
+
 https://hub.docker.com/repository/docker/lhsradek/fpm
 
 #### Setup
