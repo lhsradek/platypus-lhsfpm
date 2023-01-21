@@ -4,7 +4,7 @@
 
 It's for [platypus-lhsdock](https://github.com/lhsradek/platypus-lhsdock) and [platypus-wordpress-mysql](https://github.com/lhsradek/platypus-wordpress-mysql)
 
-With [ImageMagic](https://imagemagick.org/index.php), gd, zip, pecl-redis for [Redis Object Cache](https://cs.wordpress.org/plugins/redis-cache/) etc.. for [Wordpress](https://hub.docker.com/_/wordpress) and elastic [apm-agent-php](https://github.com/elastic/apm-agent-php/releases)
+With imagic, gd, zip, pecl-redis for [Redis Object Cache](https://cs.wordpress.org/plugins/redis-cache/) etc.. for [Wordpress](https://hub.docker.com/_/wordpress) and elasticsearch [apm-agent-php](https://github.com/elastic/apm-agent-php/releases)
 
 See:
 
