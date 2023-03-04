@@ -14,7 +14,7 @@ RUN docker-php-ext-enable redis
 RUN docker-php-ext-enable imagick
 RUN apk del autoconf gcc g++ gd-dev icu-dev make musl-dev imagemagick-dev imagemagick-c++ libzip-dev xz-dev zlib-dev pcre-dev ${PHPIZE_DEPS}
 RUN rm -f /tmp/pear/download/imagick*
-ADD --chown=44 /root/bin/apm-agent-php_*.apk /root/bin/apm-agent-php_1.7.1_all.apk
-RUN apk add --allow-untrusted --no-cache /root/bin/apm-agent-php_1.7.1_all.apk
-RUN rm -f apm-agent-php_1.7.1_all.apk
+ADD --chown=44 /root/bin/apm-agent-php_*.apk /root/bin/apm-agent-php_1.8.0_all.apk
+RUN apk add --allow-untrusted --no-cache /root/bin/apm-agent-php_1.8.0_all.apk
+RUN rm -f apm-agent-php_1.8.0_all.apk
 RUN chown www-data:www-data -R /var/www/html
